@@ -24,11 +24,11 @@ interface Query {
 export default function ProjectSlugRoute(props: PageProps) {
   const { settings, post, morePosts, draftMode } = props
 
-  if (draftMode) {
-    return (
-      <PreviewPostPage post={post} morePosts={morePosts} settings={settings} />
-    )
-  }
+  // if (draftMode) {
+  //   return (
+  //     <PreviewPostPage post={post} morePosts={morePosts} settings={settings} />
+  //   )
+  // }
 
   return <PostPage post={post} morePosts={morePosts} settings={settings} />
 }
